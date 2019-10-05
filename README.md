@@ -1,71 +1,37 @@
-*Psst — looking for a shareable component template? Go here --> [sveltejs/component-template](https://github.com/sveltejs/component-template)*
+# svelte performance test
 
----
+Project based on this -> [template](https://github.com/sveltejs/template).
 
-# svelte app
-
-This is a project template for [Svelte](https://svelte.dev) apps. It lives at https://github.com/sveltejs/template.
-
-To create a new project based on this template using [degit](https://github.com/Rich-Harris/degit):
-
-```bash
-npx degit sveltejs/template svelte-app
-cd svelte-app
-```
-
-*Note that you will need to have [Node.js](https://nodejs.org) installed.*
-
+\*_Note that you will need to have [Node.js](https://nodejs.org) installed._
 
 ## Get started
 
 Install the dependencies...
 
 ```bash
-cd svelte-app
+cd svelte-performance-test
 npm install
 ```
 
-...then start [Rollup](https://rollupjs.org):
+...then start [Rollup](https://rollupjs.org) for development:
 
 ```bash
 npm run dev
 ```
 
-Navigate to [localhost:5000](http://localhost:5000). You should see your app running. Edit a component file in `src`, save it, and reload the page to see your changes.
+Navigate to [localhost:5000](http://localhost:5000). You should see your app running.
 
-By default, the server will only respond to requests from localhost. To allow connections from other computers, edit the `sirv` commands in package.json to include the option `--host 0.0.0.0`.
+## Build for testing
 
-
-## Deploying to the web
-
-### With [now](https://zeit.co/now)
-
-Install `now` if you haven't already:
+Build optimized and minified version...
 
 ```bash
-npm install -g now
-```
-
-Then, from within your project folder:
-
-```bash
-cd public
-now
-```
-
-As an alternative, use the [Now desktop client](https://zeit.co/download) and simply drag the unzipped project folder to the taskbar icon.
-
-### With [surge](https://surge.sh/)
-
-Install `surge` if you haven't already:
-
-```bash
-npm install -g surge
-```
-
-Then, from within your project folder:
-
-```bash
+cd svelte-performance-test
 npm run build
-surge public
+```
+
+…then serve build version on [localhost:5000](http://localhost:5000):
+
+```bash
+npx serve -s public -l 5000
 ```
