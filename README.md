@@ -1,6 +1,8 @@
 # svelte performance test
 
-Project based on this -> [template](https://github.com/sveltejs/template).
+## [Demo](https://agitated-babbage-fd59f5.netlify.com)
+
+Project based on this [template](https://github.com/sveltejs/template).
 
 \*_Note that you will need to have [Node.js](https://nodejs.org) installed._
 
