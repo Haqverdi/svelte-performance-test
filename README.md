@@ -1,6 +1,6 @@
 # svelte performance test
 
-## [Demo](https://agitated-babbage-fd59f5.netlify.com)
+## [Demo](https://svelte-performance-test.netlify.com)
 
 Project based on this [template](https://github.com/sveltejs/template).
 
